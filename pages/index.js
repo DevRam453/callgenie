@@ -14,7 +14,7 @@ export default function Home() {
         <nav className="flex items-center gap-4 text-sm">
           <a href="#features" className="hover:underline">Features</a>
           <a href="#pricing" className="hover:underline">Pricing</a>
-          <Link href="/local" className="px-4 py-2 rounded-md bg-white shadow text-sm font-medium">Directory</Link>
+          <Link href="/local"><a className="px-4 py-2 rounded-md bg-white shadow text-sm font-medium">Directory</a></Link>
         </nav>
       </header>
 
@@ -97,4 +97,39 @@ export default function Home() {
               <li>200 call minutes</li>
               <li>Basic booking</li>
             </ul>
-            <button className="mt-4 w-full py-2 rounded-md bg-[#2F8FFF] text-white font-semibold">Start trial</b
+            <button className="mt-4 w-full py-2 rounded-md bg-[#2F8FFF] text-white font-semibold">Start trial</button>
+          </div>
+
+          <div className="p-6 rounded-xl bg-white shadow border-2 border-[#2F8FFF]">
+            <div className="text-sm text-slate-500">Pro</div>
+            <div className="mt-2 text-3xl font-bold">R899<span className="text-base font-medium">/mo</span></div>
+            <ul className="mt-4 text-slate-600 space-y-2">
+              <li>500 call minutes</li>
+              <li>Advanced scheduling</li>
+              <li>Transcripts & WhatsApp alerts</li>
+            </ul>
+            <button className="mt-4 w-full py-2 rounded-md bg-[#2F8FFF] text-white font-semibold">Choose Pro</button>
+          </div>
+
+          <div className="p-6 rounded-xl bg-white shadow">
+            <div className="text-sm text-slate-500">Elite</div>
+            <div className="mt-2 text-3xl font-bold">R1,499<span className="text-base font-medium">/mo</span></div>
+            <ul className="mt-4 text-slate-600 space-y-2">
+              <li>1,000 call minutes</li>
+              <li>Multi-location & priority routing</li>
+              <li>Outage & ISP features</li>
+            </ul>
+            <button className="mt-4 w-full py-2 rounded-md bg-[#2F8FFF] text-white font-semibold">Choose Elite</button>
+          </div>
+        </div>
+      </section>
+
+      <footer className="max-w-6xl mx-auto px-6 py-8 text-sm text-slate-500">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <div>© {new Date().getFullYear()} CallGenie — built for trades, gyms & fibre.</div>
+          <div className="mt-4 md:mt-0">Terms • Privacy • Contact</div>
+        </div>
+      </footer>
+    </div>
+  )
+}
